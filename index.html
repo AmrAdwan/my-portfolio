@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="./style/style.css">
+  <script src="./scripts/navbar.js"></script>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+</head>
+
+<body>
+  <div id="particles-js"></div>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">My Portfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="projects.html">My Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Me</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="container text-center mt-5">
+    <h1>Welcome to My Portfolio</h1>
+    <p>I am a software developer with a passion for technology and innovation. Explore my projects and get in touch!</p>
+  </header>
+
+  <section id="about" class="container mt-5">
+    <h2>About Me</h2>
+    <p>As a software developer, I embody a naturally dynamic and goal-oriented mindset. My approach to problem-solving
+      is marked by steadfast perseverance and a dedication to excellence. With strong communication skills and an
+      analytical thought process, I effectively collaborate with teams and clients. Continuously learning, I stay
+      abreast of tech trends to bring effective strategies into my work.</p>
+    <img src="./imgs/profile.jpg" alt="My Professional Photo" class="img-fluid rounded mx-auto d-block profile-photo">
+  </section>
+
+  <section id="skills" class="container mt-5">
+    <h2>Skills & Expertise</h2>
+    <ul class="list-group">
+      <li class="list-group-item">Advanced Programming: C, C++, Java, Python, JavaScript, C#</li>
+      <li class="list-group-item">Web Development: HTML5, CSS3, React, Angular</li>
+      <li class="list-group-item">Backend Solutions: Node.js, Django, Spring Boot</li>
+      <li class="list-group-item">Database Management: MySQL</li>
+      <li class="list-group-item">DevOps: Docker, CI/CD pipelines</li>
+    </ul>
+  </section>
+
+  <section id="projects" class="container mt-5">
+    <h2>Featured Projects</h2>
+    <p>Explore a selection of my most significant work below:</p>
+    <div class="row">
+      <!-- Card Sorting App -->
+      <div class="col-md-4 mb-3">
+        <div class="card h-100">
+          <img src="./imgs/cardsorting/login.png" class="card-img-top" alt="Card Sorting App">
+          <div class="card-body">
+            <p class="card-text">Card Sorting App: A web application to help teachers create teaching questions based on
+              sorting cards.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Scrum Board App -->
+      <div class="col-md-4 mb-3">
+        <div class="card h-100">
+          <img src="./imgs/scrum/home.png" class="card-img-top" alt="Scrum Board App">
+          <div class="card-body">
+            <p class="card-text">Scrum Board App: A tool to enhance agility and productivity in software development
+              teams.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Healthcare Management System -->
+      <div class="col-md-4 mb-3">
+        <div class="card h-100">
+          <img src="./imgs/health/home.png" class="card-img-top" alt="Healthcare Management System">
+          <div class="card-body">
+            <p class="card-text">Healthcare Management System: A web application to streamline administrative and
+              clinical processes within healthcare facilities.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Link to the projects page -->
+    <p class="text-center mt-3">
+      <a href="projects.html" class="btn btn-primary">View All Projects</a>
+    </p>
+  </section>
+
+  <!-- <footer class="bg-dark text-light text-center py-4">
+    <p>Contact me at: <a href="mailto:amr.adwan@hotmail.com" class="text-light">amr.adwan@hotmail.com</a></p>
+    <a href="https://github.com/AmrAdwan" target="_blank" class="me-3">
+      <i class="fab fa-github"></i> GitHub
+    </a>
+    <a href="https://www.linkedin.com/in/amr-adwan/" target="_blank">
+      <i class="fab fa-linkedin-in"></i> LinkedIn
+    </a>
+  </footer> -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  <script src="./scripts/particles.js"></script>
+  <script>includeHTML();</script>
+</body>
+
+</html>
