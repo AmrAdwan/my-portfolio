@@ -1,0 +1,154 @@
+.projectSlider {
+  position: relative;
+  width: 100%; /* Adjust the width as needed */
+  margin: auto;
+  display: flex;
+  align-items: center; /* Aligns children (image and buttons) vertically */
+  justify-content: center; /* Spaces out children */
+}
+
+.projectSlider img {
+  max-width: 800px; /* Maximum image width */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover;
+  flex-shrink: 0; /* Prevents the image from shrinking */
+
+  transition: opacity 0.5s ease; /* Smooth transition for the opacity */
+  width: 100%; /* Ensure full container width */
+}
+
+.img-enlarged {
+  width: 150%;
+  height: auto;
+  transition: transform 0.3s;
+  transform: scale(1.5);
+  z-index: 10;
+  position: relative;
+}
+
+.projectSlider button {
+  cursor: pointer;
+  position: absolute;
+  top: 50%; /* Centers the button vertically */
+  transform: translateY(-50%);
+  padding: 20px;
+  color: #fc8c8c; /* Arrow icon color */
+  font-weight: bold;
+  font-size: 30px; /* Arrow icon size */
+  transition: 0.6s ease;
+  user-select: none;
+  z-index: 10;
+  background-color: transparent; /* Makes the background fully transparent */
+  border: none; /* Removes any border */
+}
+
+.projectSlider #webshopLeftArrow,
+.projectSlider #weatherLeftArrow,
+.projectSlider #financeLeftArrow,
+.projectSlider #ticLeftArrow,
+.projectSlider #todoLeftArrow,
+.projectSlider #carLeftArrow,
+.projectSlider #cardLeftArrow,
+.projectSlider #flaskLeftArrow,
+.projectSlider #modelfreeLeftArrow,
+.projectSlider #scrumLeftArrow,
+.projectSlider #reactLeftArrow,
+.projectSlider #healthLeftArrow,
+.projectSlider #dbviewerLeftArrow {
+  left: 0;
+}
+
+.projectSlider #webshopRightArrow,
+.projectSlider #weatherRightArrow,
+.projectSlider #financeRightArrow,
+.projectSlider #ticRightArrow,
+.projectSlider #todoRightArrow,
+.projectSlider #carRightArrow,
+.projectSlider #cardRightArrow,
+.projectSlider #flaskRightArrow,
+.projectSlider #modelfreeRightArrow,
+.projectSlider #scrumRightArrow,
+.projectSlider #reactRightArrow,
+.projectSlider #healthRightArrow,
+.projectSlider #dbviewerRightArrow {
+  right: 0;
+}
+
+.projectSlider button:hover {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.3
+  ); /* Adds a slight white background on hover for better visibility */
+}
+
+.project {
+  width: 75%;
+  margin: auto;
+}
+
+/* Style the particles background */
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Keep it behind other content */
+  background-color: #333; /* Fallback color */
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  padding-bottom: 40px;
+  background-color: transparent;
+}
+
+/* Project Title and Description */
+
+h2,
+p,
+ul {
+  color: #fff; /* Set all headers and paragraphs to white */
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1.1rem;
+}
+
+body {
+  background-color: #333;
+}
+
+h1 {
+  color: #fff;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.card {
+  background-color: #444;
+  border: none;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2);
+}
+
+.card-title a {
+  color: #00aaff;
+  transition: color 0.3s;
+}
+
+.card-title a:hover {
+  color: #ffaa00;
+  text-decoration: underline;
+}

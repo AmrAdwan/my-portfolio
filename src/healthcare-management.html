@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../style/style.css">
+  <link rel="stylesheet" href="../style/projects.css">
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <title>Healthcare Management System</title>
+</head>
+
+<body>
+  <div id="particles-js"></div>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">My Portfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Introduction</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="projects.html">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Me</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container mt-5">
+    <h1>Healthcare Management System</h1>
+    <p>The <strong>Healthcare Management System</strong> is a web application designed to streamline the
+      administrative and clinical processes within healthcare facilities. This application allows healthcare providers
+      to efficiently manage patient records, appointments, medical records, billing, and doctor information. Key
+      features include patient and doctor management, appointment scheduling, and detailed medical record-keeping. The
+      system supports different user roles, including administrators and doctors, with appropriate access rights to
+      ensure data security and integrity.</p>
+    <ul>
+      <li><strong>ASP.NET Core</strong>: The web application framework used to build and run the application.</li>
+      <li><strong>Entity Framework Core</strong>: The ORM (Object-Relational Mapper) used for database operations.
+      </li>
+      <li><strong>SQLite</strong>: The database engine used for data storage.</li>
+      <li><strong>Bootstrap</strong>: The front-end framework used for responsive and modern user interface design.
+      </li>
+      <li><strong>Razor Pages</strong>: The view engine used for rendering dynamic web pages.</li>
+      <li><strong>Visual Studio Code</strong>: The IDE (Integrated Development Environment) used for application
+        development and debugging.</li>
+    </ul>
+    <div id="healthSliderImages" class="projectSlider">
+      <button id="healthLeftArrow" class="btn btn-light">&#10094;</button>
+      <img id="healthSliderImage" src="" alt="health" class="img-fluid clickable-image">
+      <button id="healthRightArrow" class="btn btn-light">&#10095;</button>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  <script src="../scripts/projects.js"></script>
+  <script src="../scripts/particles.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function ()
+    {
+      var images = document.querySelectorAll('.clickable-image');
+      images.forEach(function (img)
+      {
+        img.addEventListener('click', function ()
+        {
+          this.classList.toggle('img-enlarged');
+        });
+      });
+    });
+
+  </script>
+</body>
+
+</html>

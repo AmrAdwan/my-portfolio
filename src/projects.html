@@ -1,0 +1,539 @@
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <title>My Projects</title>
+  <link rel="stylesheet" href="../style/style.css">
+  <link rel="stylesheet" href="../style/projects.css">
+  <script src="../scripts/navbar.js"></script>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+</head>
+
+<body>
+  <div id="particles-js"></div>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">My Portfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Introduction</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Me</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="container mt-5">
+    <h1>Portfolio Showcase</h1>
+
+    <section class="project mt-4">
+      <h2>CRUD Operations Interface</h2>
+      <p>This interactive web application exemplifies the fundamental CRUD (Create, Read, Update, Delete) operations on
+        a database. It utilizes a robust Java-based backend with Spring Boot, paired with a dynamic frontend crafted in
+        HTML, CSS, and JavaScript to deliver a seamless user experience.</p>
+      <div class="text-center">
+        <img src="../imgs/CRUD.png" alt="CRUD frontend" class="img-fluid clickable-image"
+          style="width:75%; height:100%;">
+      </div>
+    </section>
+
+    <section class="project mt-4">
+      <h2>E-Commerce Webshop Platform</h2>
+      <p>Designed and developed a comprehensive e-commerce solution with a keen focus on user-centric design. This
+        project harnesses the power of HTML, CSS, JavaScript, and PHP, orchestrated via a SQL database. A meticulous
+        implementation of the MVC (Model-View-Controller) architecture ensures scalable and maintainable code.</p>
+      <div id="webshopSlider" class="projectSlider">
+        <button id="webshopLeftArrow" class="btn btn-light">&#10094;</button>
+        <img id="webshopSliderImage" src="" alt="Webshop Image" class="img-fluid clickable-image">
+        <button id="webshopRightArrow" class="btn btn-light">&#10095;</button>
+      </div>
+    </section>
+
+    <section class="project mt-4">
+      <h2>Weather Notification App</h2>
+      <p>The Weather Notification App offers real-time meteorological data for user-selected locations. Tailored to
+        deliver information via console, desktop notifications, or email, this Java-based application provides
+        versatility and user convenience at its core.</p>
+      <div id="weatherSlider" class="projectSlider">
+        <button id="weatherLeftArrow" class="btn btn-light">&#10094;</button>
+        <img id="weatherSliderImage" src="" alt="Weather Project Image" class="img-fluid clickable-image">
+        <button id="weatherRightArrow" class="btn btn-light">&#10095;</button>
+      </div>
+    </section>
+
+    <section class="project mt-4">
+      <h2>Personal Finance Simulator</h2>
+      <p>Enabling users to simulate and forecast their financial future, this app ingests user-provided financial data
+        to model projected savings and expenditures. Visualized through interactive charts and accompanied by
+        personalized advice, the simulator is a powerful tool for financial planning, built with C# and ASP.NET.</p>
+      <div id="financeSliderImages" class="projectSlider">
+        <button id="financeLeftArrow" class="btn btn-light">&#10094;</button>
+        <img id="financeSliderImage" src="" alt="Finance Simulator Image" class="img-fluid clickable-image">
+        <button id="financeRightArrow" class="btn btn-light">&#10095;</button>
+      </div>
+    </section>
+
+    <section class="project mt-4">
+      <h2>Interactive Tic Tac Toe Game</h2>
+      <p>This project revisits the classic Tic Tac Toe game with an interactive twist, featuring a computer-controlled
+        opponent. Whether the player or the computer goes first is randomly determined, ensuring a fresh experience with
+        each game. Developed with a combination of HTML, CSS, and JavaScript, it showcases fundamental game development
+        techniques.</p>
+      <div id="ticSliderImages" class="projectSlider">
+        <button id="ticLeftArrow" class="btn btn-light">&#10094;</button>
+        <img id="ticSliderImage" src="" alt="Tic Tac Toe Image" class="img-fluid clickable-image">
+        <button id="ticRightArrow" class="btn btn-light">&#10095;</button>
+      </div>
+    </section>
+
+    <section class="project mt-4">
+      <h2>ToDo MacOs application</h2>
+      <p>This application was built using SwiftUI. The user has the ability to create a new task, assign it priority,
+        and set a deadline. They can also separate completed and incomplete tasks. Users can mark tasks as finished or
+        remove them.</p>
+      <div id="todoSliderImages" class="projectSlider">
+        <button id="todoLeftArrow" class="btn btn-light">&#10094;</button>
+        <img id="todoSliderImage" src="" alt="ToDo Image" class="img-fluid clickable-image">
+        <button id="todoRightArrow" class="btn btn-light">&#10095;</button>
+      </div>
+    </section>
+
+    <section class="project mt-4">
+      <h2>Car Dashboard</h2>
+      <p>This program was created using Java. The user can pick between a simulation of an electric or gas motor car.
+        After selecting the type of car, the user will see a menu with instructions on how to turn on/off the motor, the
+        radio, and other features.</p>
+      <div id="carSliderImages" class="projectSlider">
+        <button id="carLeftArrow" class="btn btn-light">&#10094;</button>
+        <img id="carSliderImage" src="" alt="Car Image" class="img-fluid clickable-image">
+        <button id="carRightArrow" class="btn btn-light">&#10095;</button>
+      </div>
+    </section>
+
+    <section class="project mt-4">
+      <h2>Card Sorting App</h2>
+      <p>Card Sorting App is a web application that helps teachers in creating teaching questions based on sorting
+        cards. The web app allows students to sort cards into the right categories. Teachers can see results and
+        statistics based on the submitted sorts by students.</p>
+      <ul>
+        <li>Python</li>
+        <li>JavaScript</li>
+        <li>Flask</li>
+        <li>Jinja2</li>
+        <li>SQLAlchemy (flask-sqlalchemy)</li>
+        <li>Bcrypt (flask_bcrypt)</li>
+        <li>LoginManager (flask_login)</li>
+      </ul>
+      <div id="cardSliderImages" class="projectSlider">
+        <button id="cardLeftArrow" class="btn btn-light">&#10094;</button>
+        <img id="cardSliderImage" src="" alt="Card Sorting Image" class="img-fluid clickable-image">
+        <button id="cardRightArrow" class="btn btn-light">&#10095;</button>
+      </div>
+    </section>
+
+    <section class="project mt-4">
+      <h2>Crud in Flask</h2>
+      <p>This project was built with Flask (Python), HTML, and CSS. The aim behind this application is to display the
+        Pets database and its records while also allowing the user to create, update, and delete any entry from the
+        table.</p>
+      <div id="flaskSliderImages" class="projectSlider">
+        <button id="flaskLeftArrow" class="btn btn-light">&#10094;</button>
+        <img id="flaskSliderImage" src="" alt="Crud in Flask Image" class="img-fluid clickable-image">
+        <button id="flaskRightArrow" class="btn btn-light">&#10095;</button>
+      </div>
+    </section>
+
+    <section class="project mt-4">
+      <h2>Model Free</h2>
+      <p>This project compares 3 model-free RL algorithms: Q-Learning, SARSA, and Expected-SARSA, investigating their
+        performance on various tasks and the impact of different parameters. Objectives include implementation,
+        parameter investigation, and performance comparison in maze navigation and game playing.</p>
+      <div id="modelfreeSliderImages" class="projectSlider">
+        <button id="modelfreeLeftArrow" class="btn btn-light">&#10094;</button>
+        <img id="modelfreeSliderImage" src="" alt="model free" class="img-fluid clickable-image">
+        <button id="modelfreeRightArrow" class="btn btn-light">&#10095;</button>
+      </div>
+    </section>
+
+    <section class="project mt-4">
+      <h2>Scrum Board App</h2>
+      <p>ScrumBoard is a comprehensive tool designed to enhance the agility and productivity of software development
+        teams. With ScrumBoard, you can visualize your project's workflow using a flexible board with five distinct
+        columns: Backlog, Ready, In Progress, Review, and Done. This intuitive layout allows for easy organization and
+        prioritization of tasks, enabling your team to focus on what's crucial at every stage of development.</p>
+      <ul>
+        <li>Flask (Python)</li>
+        <li>HTML5</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Bootstrap 4 & 5</li>
+        <li>Jinja2</li>
+        <li>LoginManager (flask_login)</li>
+      </ul>
+      <div id="scrumSliderImages" class="projectSlider">
+        <button id="scrumLeftArrow" class="btn btn-light">&#10094;</button>
+        <img id="scrumSliderImage" src="" alt="scrum app" class="img-fluid clickable-image">
+        <button id="scrumRightArrow" class="btn btn-light">&#10095;</button>
+      </div>
+    </section>
+
+    <section class="project mt-4">
+      <h2>Weather application React</h2>
+      <p>This weather application displays the weather for the cities in the Netherlands, based on the nearest measuring
+        stations closest to the desired city. It also shows weather conditions in three different languages:</p>
+      <ul>
+        <li>Dutch</li>
+        <li>English</li>
+        <li>German</li>
+      </ul>
+      <p>and two different temperature measurement units:</p>
+      <ul>
+        <li>Celsius</li>
+        <li>Fahrenheit</li>
+      </ul>
+      <p>The application is implemented using the React library.</p>
+      <div id="reactSliderImages" class="projectSlider">
+        <button id="reactLeftArrow" class="btn btn-light">&#10094;</button>
+        <img id="reactSliderImage" src="" alt="react-weather" class="img-fluid clickable-image">
+        <button id="reactRightArrow" class="btn btn-light">&#10095;</button>
+      </div>
+    </section>
+
+    <section class="project mt-4">
+      <h2>Collatz conjecture</h2>
+      <p>The Collatz conjecture is one of the most famous unsolved problems in mathematics. The conjecture asks whether
+        repeating two simple arithmetic operations will eventually transform every positive integer into 1.</p>
+      <div class="text-center">
+        <img src="../imgs/collatz/cycles.png" alt="cycles" class="img-fluid clickable-image"
+          style="width:75%; height:100%;">
+      </div>
+      <p>This single-page application is implemented using the Vue framework and certainly HTML5 and CSS (Bootstrap 5)
+      </p>
+      <div class="text-center">
+        <img src="../imgs/collatz/collatz.png" alt="collatz" class="img-fluid clickable-image"
+          style="width:75%; height:100%;">
+      </div>
+    </section>
+
+    <section class="project mt-4">
+      <h2>Healthcare Management System</h2>
+      <p>The <strong>Healthcare Management System</strong> is a web application designed to streamline the
+        administrative and clinical processes within healthcare facilities. This application allows healthcare providers
+        to efficiently manage patient records, appointments, medical records, billing, and doctor information. Key
+        features include patient and doctor management, appointment scheduling, and detailed medical record-keeping. The
+        system supports different user roles, including administrators and doctors, with appropriate access rights to
+        ensure data security and integrity.</p>
+      <ul>
+        <li><strong>ASP.NET Core</strong>: The web application framework used to build and run the application.</li>
+        <li><strong>Entity Framework Core</strong>: The ORM (Object-Relational Mapper) used for database operations.
+        </li>
+        <li><strong>SQLite</strong>: The database engine used for data storage.</li>
+        <li><strong>Bootstrap</strong>: The front-end framework used for responsive and modern user interface design.
+        </li>
+        <li><strong>Razor Pages</strong>: The view engine used for rendering dynamic web pages.</li>
+        <li><strong>Visual Studio Code</strong>: The IDE (Integrated Development Environment) used for application
+          development and debugging.</li>
+      </ul>
+      <div id="healthSliderImages" class="projectSlider">
+        <button id="healthLeftArrow" class="btn btn-light">&#10094;</button>
+        <img id="healthSliderImage" src="" alt="health" class="img-fluid clickable-image">
+        <button id="healthRightArrow" class="btn btn-light">&#10095;</button>
+      </div>
+    </section>
+
+    <section class="project mt-4">
+      <h2>Database Viewer</h2>
+      <p>The <strong>Database Viewer</strong> is a web application designed to provide a user-friendly interface for
+        interacting with various types of databases. This application allows users to view and manage databases, tables,
+        and records with ease. Key features include database selection, table viewing, and the ability to edit records
+        and column types. The system supports multiple database types, including MySQL, SQL Server, and PostgreSQL,
+        ensuring versatility and broad compatibility.</p>
+      <ul>
+        <li><strong>PHP</strong>: The server-side scripting language used to build the application.</li>
+        <li><strong>PDO</strong>: The PHP Data Objects extension used for database interactions.</li>
+        <li><strong>MySQL, SQL Server, PostgreSQL</strong>: The supported database engines.</li>
+        <li><strong>Bootstrap 5</strong>: The front-end framework used for responsive and modern user interface design.
+        </li>
+        <li><strong>XAMPP</strong>: The development environment used to run the application locally.</li>
+        <li><strong>Adminer</strong>: An alternative database management tool that can be used alongside the
+          application.</li>
+      </ul>
+      <div id="dbviewerSliderImages" class="projectSlider">
+        <button id="dbviewerLeftArrow" class="btn btn-light">&#10094;</button>
+        <img id="dbviewerSliderImage" src="" alt="Database Viewer" class="img-fluid clickable-image">
+        <button id="dbviewerRightArrow" class="btn btn-light">&#10095;</button>
+      </div>
+    </section>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  <script src="../scripts/projects.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function ()
+    {
+      var images = document.querySelectorAll('.clickable-image');
+      images.forEach(function (img)
+      {
+        img.addEventListener('click', function ()
+        {
+          this.classList.toggle('img-enlarged');
+        });
+      });
+    });
+  </script>
+  <script src="../scripts/particles.js"></script>
+</body>
+
+</html> -->
+
+
+<!-- new version -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+  <title>My Projects</title>
+  <link rel="stylesheet" href="../style/style.css">
+  <link rel="stylesheet" href="../style/projects.css">
+  <script src="../scripts/navbar.js"></script>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+</head>
+
+<body>
+  <div id="particles-js"></div>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">My Portfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Introduction</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Me</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container mt-5">
+    <h1>Portfolio Showcase</h1>
+    <ul class="list-group">
+      <li class="list-group-item"><a href="crud-operations.html">CRUD Operations Interface</a></li>
+      <li class="list-group-item"><a href="ecommerce-webshop.html">E-Commerce Webshop Platform</a></li>
+      <li class="list-group-item"><a href="weather-notification.html">Weather Notification App</a></li>
+      <li class="list-group-item"><a href="personal-finance-simulator.html">Personal Finance Simulator</a></li>
+      <li class="list-group-item"><a href="tic-tac-toe.html">Interactive Tic Tac Toe Game</a></li>
+      <li class="list-group-item"><a href="todo-macos.html">ToDo MacOs Application</a></li>
+      <li class="list-group-item"><a href="car-dashboard.html">Car Dashboard</a></li>
+      <li class="list-group-item"><a href="card-sorting.html">Card Sorting App</a></li>
+      <li class="list-group-item"><a href="crud-flask.html">Crud in Flask</a></li>
+      <li class="list-group-item"><a href="model-free.html">Model Free</a></li>
+      <li class="list-group-item"><a href="scrum-board.html">Scrum Board App</a></li>
+      <li class="list-group-item"><a href="weather-react.html">Weather Application React</a></li>
+      <li class="list-group-item"><a href="collatz-conjecture.html">Collatz Conjecture</a></li>
+      <li class="list-group-item"><a href="healthcare-management.html">Healthcare Management System</a></li>
+      <li class="list-group-item"><a href="database-viewer.html">Database Viewer</a></li>
+    </ul>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  <script src="../scripts/projects.js"></script>
+  <script src="../scripts/particles.js"></script>
+</body> 
+
+</html>-->
+
+<!-- last version -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+  <title>My Projects</title>
+  <link rel="stylesheet" href="../style/style.css">
+  <link rel="stylesheet" href="../style/projects.css">
+  <script src="../scripts/navbar.js"></script>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+</head>
+
+<body>
+  <div id="particles-js"></div>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">My Portfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Introduction</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Me</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container mt-5">
+    <h1 class="text-center">Portfolio Showcase</h1>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      <div class="col">
+        <div class="card text-white bg-dark h-100">
+          <div class="card-body">
+            <h5 class="card-title"><a href="crud-operations.html" class="text-white text-decoration-none">CRUD
+                Operations Interface</a></h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card text-white bg-dark h-100">
+          <div class="card-body">
+            <h5 class="card-title"><a href="ecommerce-webshop.html" class="text-white text-decoration-none">E-Commerce
+                Webshop Platform</a></h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card text-white bg-dark h-100">
+          <div class="card-body">
+            <h5 class="card-title"><a href="weather-notification.html" class="text-white text-decoration-none">Weather
+                Notification App</a></h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card text-white bg-dark h-100">
+          <div class="card-body">
+            <h5 class="card-title"><a href="personal-finance-simulator.html"
+                class="text-white text-decoration-none">Personal Finance Simulator</a></h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card text-white bg-dark h-100">
+          <div class="card-body">
+            <h5 class="card-title"><a href="tic-tac-toe.html" class="text-white text-decoration-none">Interactive Tic
+                Tac
+                Toe Game</a></h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card text-white bg-dark h-100">
+          <div class="card-body">
+            <h5 class="card-title"><a href="todo-macos.html" class="text-white text-decoration-none">ToDo MacOs
+                Application</a></h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card text-white bg-dark h-100">
+          <div class="card-body">
+            <h5 class="card-title"><a href="car-dashboard.html" class="text-white text-decoration-none">Car
+                Dashboard</a>
+            </h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card text-white bg-dark h-100">
+          <div class="card-body">
+            <h5 class="card-title"><a href="card-sorting.html" class="text-white text-decoration-none">Card Sorting
+                App</a>
+            </h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card text-white bg-dark h-100">
+          <div class="card-body">
+            <h5 class="card-title"><a href="crud-flask.html" class="text-white text-decoration-none">Crud in Flask</a>
+            </h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card text-white bg-dark h-100">
+          <div class="card-body">
+            <h5 class="card-title"><a href="model-free.html" class="text-white text-decoration-none">Model Free</a></h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card text-white bg-dark h-100">
+          <div class="card-body">
+            <h5 class="card-title"><a href="scrum-board.html" class="text-white text-decoration-none">Scrum Board
+                App</a>
+            </h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card text-white bg-dark h-100">
+          <div class="card-body">
+            <h5 class="card-title"><a href="weather-react.html" class="text-white text-decoration-none">Weather
+                Application
+                React</a></h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card text-white bg-dark h-100">
+          <div class="card-body">
+            <h5 class="card-title"><a href="collatz-conjecture.html" class="text-white text-decoration-none">Collatz
+                Conjecture</a></h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card text-white bg-dark h-100">
+          <div class="card-body">
+            <h5 class="card-title"><a href="healthcare-management.html"
+                class="text-white text-decoration-none">Healthcare
+                Management System</a></h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card text-white bg-dark h-100">
+          <div class="card-body">
+            <h5 class="card-title"><a href="database-viewer.html" class="text-white text-decoration-none">Database
+                Viewer</a></h5>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="../scripts/projects.js"></script>
+    <script src="../scripts/particles.js"></script>
+</body>
+
+</html>

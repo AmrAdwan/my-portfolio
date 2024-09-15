@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../style/style.css">
+  <link rel="stylesheet" href="../style/projects.css">
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <title>Database Viewer</title>
+</head>
+
+<body>
+  <div id="particles-js"></div>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">My Portfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Introduction</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="projects.html">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Me</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container mt-5">
+    <h1>Database Viewer</h1>
+    <p>The <strong>Database Viewer</strong> is a web application designed to provide a user-friendly interface for
+      interacting with various types of databases. This application allows users to view and manage databases, tables,
+      and records with ease. Key features include database selection, table viewing, and the ability to edit records
+      and column types. The system supports multiple database types, including MySQL, SQL Server, and PostgreSQL,
+      ensuring versatility and broad compatibility.</p>
+    <ul>
+      <li><strong>PHP</strong>: The server-side scripting language used to build the application.</li>
+      <li><strong>PDO</strong>: The PHP Data Objects extension used for database interactions.</li>
+      <li><strong>MySQL, SQL Server, PostgreSQL</strong>: The supported database engines.</li>
+      <li><strong>Bootstrap 5</strong>: The front-end framework used for responsive and modern user interface design.
+      </li>
+      <li><strong>XAMPP</strong>: The development environment used to run the application locally.</li>
+      <li><strong>Adminer</strong>: An alternative database management tool that can be used alongside the
+        application.</li>
+    </ul>
+    <div id="dbviewerSliderImages" class="projectSlider">
+      <button id="dbviewerLeftArrow" class="btn btn-light">&#10094;</button>
+      <img id="dbviewerSliderImage" src="" alt="Database Viewer" class="img-fluid clickable-image">
+      <button id="dbviewerRightArrow" class="btn btn-light">&#10095;</button>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  <script src="../scripts/projects.js"></script>
+  <script src="../scripts/particles.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function ()
+    {
+      var images = document.querySelectorAll('.clickable-image');
+      images.forEach(function (img)
+      {
+        img.addEventListener('click', function ()
+        {
+          this.classList.toggle('img-enlarged');
+        });
+      });
+    });
+
+  </script>
+</body>
+
+</html>
